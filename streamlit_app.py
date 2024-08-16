@@ -10,7 +10,7 @@ st.title("Investment Portfolio Simulator")
 @st.cache_data
 def load_data():
     # Load only necessary columns and optimize data types
-    df = pd.read_csv('TQQQ_v2.csv', usecols=['Date', 'Close', 'Open'], parse_dates=['Date'], dtype={'Close': 'float32', 'Open': 'float32'})
+    df = pd.read_csv('https://github.com/kaix11-ai/investmentsim2/blob/main/TQQQ_v2.csv', usecols=['Date', 'Close', 'Open'], parse_dates=['Date'], dtype={'Close': 'float32', 'Open': 'float32'})
     return df
 
 # Load the data
